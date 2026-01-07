@@ -1,0 +1,12 @@
+name,description,price,stock,category_id,image_url
+"Modern Barrel Chair","Comfortable and stylish barrel chair with soft fabric upholstery.",250,25,,../../../Materials/chair/barrel chair 8.png
+"Luxury Recliner","High-end recliner with leather finish and adjustable footrest.",500,15,,../../../Materials/chair/chair1.jpg
+"Wooden Dining Table","Elegant wooden dining table with a modern touch.",800,10,,../../../Materials/chair/plastic chair 10.jpg
+"Office Desk","Spacious office desk with built-in storage and cable management.",350,30,,../../../Materials/bookShelf/تنزيل.jpeg
+"Ergonomic Gaming Chair","Adjustable gaming chair with lumbar support and breathable fabric.",280,20,,../../../Materials/bookShelf/4.png
+"Minimalist Bookshelf","Sleek and modern bookshelf with multiple storage compartments.",160,40,,../../../Materials/wall clock/5.jpg
+"Leather Sofa Set","Premium leather sofa set with plush cushions for extra comfort.",1200,5,,../../../Materials/wall clock/2.jpg
+"Outdoor Patio Set","Weather-resistant patio set with table and cushioned chairs.",900,12,,../../../Materials/table/5.png
+"Compact Nightstand","Modern nightstand with a drawer and open storage.",90,50,,../../../Materials/sofa/1.jpeg
+"Adjustable Standing Desk","Height-adjustable standing desk with memory presets.",550,8,,../../../Materials/pilow/1.jpg
+"Cozy Bean Bag","Soft and durable bean bag chair for lounging.",130,35,,../../../Materials/lamp/1.jpg
