@@ -140,41 +140,8 @@ body {
     display: flex;
     flex-direction: row;
     gap: 1vw;
-
-
-}
-
-.room2:hover {
-    /* width: 350px; */
-    height: 480px;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    flex-grow: 1;
-    transition: all ease 1s;
-}
-
-.room2:hover img {
-    width: fit-content;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(0deg);
-    /* transition: transform linear 0.2s; */
-
-}
-
-.room2:hover .detils {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 15px;
-    bottom: 50px;
-    font-size: x-large;
-    transform: rotate(0deg);
-
+    
+    
 }
 
 .room2 {
@@ -186,6 +153,39 @@ body {
     transition: all ease 1s;
 
 }
+.roomActive {
+    /* width: 350px; */
+    height: 480px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+    transition: all ease 1s;
+}
+
+.roomActive img {
+    width: fit-content;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(0deg);
+    /* transition: transform linear 0.2s; */
+
+}
+
+.roomActive .detils {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+    bottom: 50px;
+    font-size: x-large;
+    transform: rotate(0deg);
+
+}
+
 
 /* .room3{
     width: 150px;

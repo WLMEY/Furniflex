@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+# Furniflex — Furniture E‑Commerce (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+واجهة متجر أثاث (Front-end) مبنية بـ **React** مع تنقّل بين الصفحات باستخدام **React Router**، واعتماد **JSON Server** كـ API محلي لعرض بيانات المنتجات والفلاتر. المشروع مناسب كـ Portfolio/CV لأنه يغطّي رحلة المستخدم الأساسية: تصفّح المنتجات → تفاصيل المنتج → السلة.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+- **Type**: Single Page Application (SPA)
+- **Domain**: Furniture / E‑Commerce UI
+- **Data source**: `json-server` (ملف `DataBase.json`)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Products listing**: عرض المنتجات من مصدر بيانات محلي.
+- **Product details page**: صفحة تفاصيل المنتج.
+- **Categories page**: صفحة تصنيفات.
+- **Static pages**: About / Contact / Blog.
+- **Cart page**: صفحة السلة (واجهة).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- **Frontend**: React 18 (Create React App)
+- **Routing**: `react-router-dom` (React Router v7)
+- **UI / Styling**: Bootstrap 5 + CSS (مع وجود TailwindCSS ضمن التبعيات)
+- **Animations**: `motion`
+- **Mock API**: `json-server`
+- **Tooling**: CRA scripts + ESLint (react-app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Completed Pages (Ready & Wired in Routes)
 
-### `npm run build`
+هذه الصفحات **مكتملة ومربوطة فعليًا في الراوت** داخل `src/App.js`:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Home**: `/`
+- **Products**: `/products`
+- **Product Details**: `/products/ProductDetails`
+- **Categories**: `/Categories`
+- **About Us**: `/AboutUs`
+- **Contact**: `/Contact`
+- **Blog**: `/Blog`
+- **Shopping Cart**: `/ShoppingCartMain`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**عدد الصفحات المكتملة (وموصولة بالراوت): 8**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pages Implemented (Exist in Codebase)
 
-### `npm run eject`
+هذه الصفحات موجودة داخل `src/pages` لكنها **غير مضافة للراوت حاليًا** (يمكن ربطها لاحقًا بسهولة):
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Checkout**
+- **Order Completed**
+- **Error Page**
+- **Blog Details**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Requirements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js (يفضّل LTS)
+- npm
 
-## Learn More
+### Install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Start (App + API Server)
 
-### Code Splitting
+المشروع مهيّأ لتشغيل الواجهة + السيرفر معًا:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm start
+```
 
-### Analyzing the Bundle Size
+- **React app**: `http://localhost:3000`
+- **JSON Server API**: `http://localhost:5000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### API Notes
 
-### Making a Progressive Web App
+- **Database file**: `DataBase.json`
+- **Main endpoint**: `/products`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Scripts
 
-### Advanced Configuration
+- **start**: تشغيل `json-server` + `react-scripts start` معًا
+- **server**: تشغيل `json-server` على بورت 5000
+- **build**: بناء نسخة Production
+- **test**: تشغيل الاختبارات (إن وجدت)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure (High Level)
 
-### Deployment
+- `src/pages/`: صفحات الموقع (Home, Products, …)
+- `src/component/`: مكوّنات واجهة قابلة لإعادة الاستخدام
+- `src/styles/`: ملفات CSS لكل جزء/صفحة
+- `public/Materials/`: صور وأصول المشروع
+- `DataBase.json`: بيانات المنتجات + فلاتر (Mock API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## CV Description (Copy‑Paste)
 
-### `npm run build` fails to minify
+**Furniflex — Furniture E‑Commerce UI (React SPA)**  
+Built a multi-page furniture e‑commerce front‑end using React and React Router, with a local mock API powered by JSON Server. Implemented product listing, product details, categories, cart page, and multiple informational pages, with responsive UI styling (Bootstrap/CSS) and animations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Technologies:** React, React Router, JavaScript, Bootstrap, CSS, JSON Server, Motion  
+**Completed pages:** 8 (wired routes) — Home, Products, Product Details, Categories, About, Contact, Blog, Cart
